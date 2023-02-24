@@ -1,7 +1,9 @@
-jQuery(window).on('load', addLink());
+jQuery(document).ready(function($) {
+	$(window).on('load', addLink());
 		function addLink(){	
-			var item = 0;	
-			$("#animationWindowGet g.png image").each(function() {
+			var item = 0;
+			console.log("Hello")
+			jQuery("#animationWindowGet g.png image").each(function() {
 				
 				console.log(item);
 				item +=1;
@@ -14,3 +16,5 @@ jQuery(window).on('load', addLink());
 				$this.wrap(el);
 			});
 		}
+		
+});
